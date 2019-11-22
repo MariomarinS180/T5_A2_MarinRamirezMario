@@ -17,7 +17,9 @@ class Ordenar {
 				}
 			}
 			tfin = System.nanoTime();
-		}
+		}//ordenar burbuja uno
+		
+		
 		public static void ordenarBurbujaDos(int numeros[]) {
 			int i = 1;
 			boolean ordenado = false;
@@ -34,13 +36,14 @@ class Ordenar {
 				}
 			}
 		}//ordenar burbuja dos
+		
 		public static void ordenarBurbujaTres(int numeros[]) {
 			int i = 1;
 			boolean ordenado = true;
 			do {
 				i = i + 1;
 				for (int j = 0; j < numeros.length - i; j++) {
-					if (numeros[j] > numeros[j + 1]) {
+					if (numeros[j] < numeros[j + 1]) {
 						ordenado = false;
 						int aux = numeros[j];
 						numeros[j] = numeros[j + 1];
@@ -54,8 +57,7 @@ class Ordenar {
 	public void mostrarVector (int vector[]) {
 		System.out.println(Arrays.toString(vector));
 	}//mostrarVector
-	
-}//class
+}//class ordenar
 public class MetodoOrdenamiento{
 	public static void main (String [] args) {
 		
@@ -98,14 +100,6 @@ public class MetodoOrdenamiento{
 		Ordenar.Burbuja.ordenarBurbujaTres(datosCopia);
 		System.out.println("Vector ordenado por BURBUJA 3: ");
 		or.mostrarVector(datosCopia);
-		
-		
-		
-		
-		
-		
-
-	
 		
 		//Tiempo de ejecucion -->
 		//Cantidad de pasadas o recorridos -->
