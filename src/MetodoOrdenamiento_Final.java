@@ -20,6 +20,7 @@ class Ordenar {
 		}//ordenar burbuja uno
 		static long tInicio2, tfin2;
 		public static void ordenarBurbujaDos(int numeros[]) {
+			tInicio2 = System.nanoTime();
 			int i = 1;
 			boolean ordenado = false;
 			while ((i < numeros.length) || (ordenado == false)) {
@@ -38,6 +39,7 @@ class Ordenar {
 		}//ordenar burbuja dos
 		static long tInicio3, tfin3; 
 		public static void ordenarBurbujaTres(int numeros[]) {
+			tInicio3 = System.nanoTime(); 
 			int i = 1;
 			boolean ordenado = true;
 			do {
